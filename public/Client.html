@@ -1,0 +1,40 @@
+<h1>Client</h1>
+<!-- <form id="clientForm">
+  <label for="firstName">First Name</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form> -->
+<form id="clientForm">
+  <p id="date"></p>
+  <table>
+    <tr>
+      <td>First name: </td>
+      <td><input type="text" name="fname"></td>
+    </tr>
+    <tr>
+      <td>Last name: </td>
+      <td><input type="text" name="fname"></td>
+    </tr>
+    <tr>
+      <td>Mobile: </td>
+      <td><input type="text" name="fname"></td>
+    </tr>
+    <tr>
+      <td>Ref Code: </td>
+      <td><input type="text" name="ref"></td>
+    </tr>
+  </table>
+  <input type="submit" value="Submit">
+</form>
+
+
+<script>
+var date = Date();
+var dateArray = date.split(' ');
+date =  dateArray[0] + ', ' + dateArray[1] + ' ' + dateArray[2] + ' ' + dateArray[3];
+document.getElementById("date").innerHTML = date ;
+</script>
